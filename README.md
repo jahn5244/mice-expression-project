@@ -93,6 +93,7 @@ Processes the dataset to retrieve the max, min, top 5, bottom 5 mouse IDs, and t
 To run the tests, use the following command:
 ```sh
 python -m unittest discover
+```
 
 The tests validate the functionality of the process_dataset function using predefined datasets.
 
