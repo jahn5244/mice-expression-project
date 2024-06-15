@@ -97,4 +97,7 @@ python -m unittest discover
 
 The tests validate the functionality of the process_dataset function using predefined datasets.
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
