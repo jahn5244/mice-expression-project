@@ -1,90 +1,99 @@
-Mice Protein Expression Analysis
+# Mice Protein Expression Analysis
+
 This project analyzes protein expression data from mice, focusing on specific columns of interest. It retrieves the maximum and minimum values, the top and bottom 5 mouse IDs based on protein expression, and the median value for a selected column.
 
-Table of Contents
-Installation
-Usage
-Functions
-insert_into_linked_list
-retrieve_top5_from_linked_list
-calculate_median
-process_dataset
-Running Tests
-License
-Installation
-Clone the repository:
+## Table of Contents
 
-sh
-Copy code
-git clone https://github.com/jahn5244/miceexpressionproject.git
-Navigate to the project directory:
+- [Installation](#installation)
+- [Usage](#usage)
+- [Functions](#functions)
+  - [insert_into_linked_list](#insert_into_linked_list)
+  - [retrieve_top5_from_linked_list](#retrieve_top5_from_linked_list)
+  - [calculate_median](#calculate_median)
+  - [process_dataset](#process_dataset)
+- [Running Tests](#running-tests)
+- [License](#license)
 
-sh
-Copy code
-cd miceexpressionproject
-Install the required dependencies:
+## Installation
 
-sh
-Copy code
-pip install pandas
-Usage
-Ensure you have the dataset Data_Cortex_Nuclear.csv in the appropriate directory.
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/jahn5244/miceexpressionproject.git
+    ```
 
-Run the script:
+2. Navigate to the project directory:
+    ```sh
+    cd miceexpressionproject
+    ```
 
-sh
-Copy code
-python main.py
-You will be prompted to enter a column index (between 0 and 77) for analysis.
+3. Install the required dependencies:
+    ```sh
+    pip install pandas
+    ```
 
-Functions
-insert_into_linked_list
+## Usage
+
+1. Ensure you have the dataset `Data_Cortex_Nuclear.csv` in the appropriate directory.
+
+2. Run the script:
+    ```sh
+    python main.py
+    ```
+
+3. You will be prompted to enter a column index (between 0 and 77) for analysis.
+
+## Functions
+
+### `insert_into_linked_list`
+
 Inserts a new node into a linked list maintaining the order based on protein expression values.
 
-Parameters:
+**Parameters:**
+- `head`: The head node of the linked list.
+- `mouse_id`: The mouse ID to be inserted.
+- `protein_expression`: The protein expression value to be inserted.
 
-head: The head node of the linked list.
-mouse_id: The mouse ID to be inserted.
-protein_expression: The protein expression value to be inserted.
-Returns:
+**Returns:**
+- The head node of the modified linked list.
 
-The head node of the modified linked list.
-retrieve_top5_from_linked_list
+### `retrieve_top5_from_linked_list`
+
 Retrieves the top 5 mouse IDs from the linked list based on protein expression values.
 
-Parameters:
+**Parameters:**
+- `head`: The head node of the linked list.
 
-head: The head node of the linked list.
-Returns:
+**Returns:**
+- A list of top 5 mouse IDs.
 
-A list of top 5 mouse IDs.
-calculate_median
+### `calculate_median`
+
 Calculates the median value from two heaps (min-heap and max-heap).
 
-Parameters:
+**Parameters:**
+- `min_heap`: The min-heap containing protein expression values.
+- `max_heap`: The max-heap containing protein expression values.
 
-min_heap: The min-heap containing protein expression values.
-max_heap: The max-heap containing protein expression values.
-Returns:
+**Returns:**
+- The median value.
 
-The median value.
-process_dataset
+### `process_dataset`
+
 Processes the dataset to retrieve the max, min, top 5, bottom 5 mouse IDs, and the median value for a specified column index.
 
-Parameters:
+**Parameters:**
+- `dataset`: The dataset to be processed.
+- `column_index`: The index of the column to analyze.
 
-dataset: The dataset to be processed.
-column_index: The index of the column to analyze.
-Returns:
+**Returns:**
+- A tuple containing max value, min value, top 5 mouse IDs, bottom 5 mouse IDs, and the median value.
 
-A tuple containing max value, min value, top 5 mouse IDs, bottom 5 mouse IDs, and the median value.
-Running Tests
+## Running Tests
+
 To run the tests, use the following command:
-
-sh
-Copy code
+```sh
 python -m unittest discover
+
 The tests validate the functionality of the process_dataset function using predefined datasets.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+
