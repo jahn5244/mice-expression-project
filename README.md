@@ -1,6 +1,25 @@
 # Mice Protein Expression Analysis
 
-This project analyzes protein expression data from mice, focusing on specific columns of interest. It retrieves the maximum and minimum values, the top and bottom 5 mouse IDs based on protein expression, and the median value for a selected column.
+Welcome to the Mice Protein Expression Analysis repository! This project is designed to analyze protein expression data from mice, providing insights into various statistical measures such as maximum, minimum, median values, and identifying the top and bottom 5 mice based on their protein expression levels. This repository includes both the main analysis code and the accompanying test cases to ensure the functionality is working correctly.
+
+## Features
+
+- **Data Loading and Cleaning**: Load and preprocess the dataset, removing unnecessary columns.
+- **Statistical Analysis**: Calculate maximum, minimum, and median protein expression values.
+- **Top/Bottom 5 Analysis**: Identify the top and bottom 5 mice based on protein expression levels.
+- **Interactive Input**: User can specify which column of the dataset to analyze.
+- **Unit Testing**: Comprehensive test cases to validate the core functionality of the analysis.
+
+## Repository Structure
+
+- **main.py**: The main script that performs the protein expression analysis.
+- **tests/**: Directory containing unit tests for the project.
+- **test_process_dataset.py**: Unit tests for the process_dataset function.
+- **README.md**: Comprehensive documentation for the project.
+- **LICENSE**: License file for the project.
+- **Data_Cortex_Nuclear.csv**: The dataset used for analysis (ensure this file is in the correct directory).
+
+## Getting Started
 
 ## Table of Contents
 
