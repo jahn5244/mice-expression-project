@@ -37,7 +37,7 @@ Welcome to the Mice Protein Expression Analysis repository! This project is desi
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/jahn5244/miceexpressionproject.git
+    git clone https://github.com/jahn5244/mice-expression-project.git
     ```
 
 2. Navigate to the project directory:
